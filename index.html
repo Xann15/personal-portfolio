@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Portfolio Pandjie" />
+  <meta property="og:description" content="Hi, i'm Pandjie, a Front-end Developer" />
+  <meta property="og:image" content="image.png" />
+  <meta http-equiv="og:url" content="https://xannproject.com" />
+  <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/index.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <!--Nabvbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="position:fixed; top: 0; width: 100%; z-index: 1;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Pandjie Aldino
+      </a>
+      <h6></h6>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active aria-current=page" href="#profile"><i class="bi bi-house"></i> Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"><i class="bi bi-envelope"></i> Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="bi bi-envelope"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<!--End Navbar-->
+	
+	<!--Profile-->
+	<section id="profile">
+	  <div class="container-fluid py-5">
+	    <div class="profile-img">
+	      <img class="img-fluid rounded mx-auto" src="assets/profile.jpg" alt="profile" loading="lazy" />
+	    </div>
+	    <div class="description-wrapper">
+  	    <div class="description">
+  	      <div class="wrapper col-12">
+  	        <div class="text1 col-6">
+  	          Pandjie Aldino
+  	          Front-end Developer
+  	        </div>
+  	        <div class="text2 col-6">
+  	          Hi, I'm Pandjie,
+  	          a freelance Front-end Engineer Specialized in WebApp Developer.
+  	        </div>
+  	      </div>
+  	    </div>
+  	    <div class="btn-group col-12">
+  	      <a href="#portfolio" class="btn1">
+  	        Portfolio
+  	      </a>
+  	      <a href="#contact" class="btn2">
+  	        Contact Us
+  	      </a>
+  	    </div>
+  	  </div>
+	  </div>
+	</section>
+	<!--End Profile-->
+	
+	<!--Portfolio-->
+	<section id="portfolio">
+	  <div class="container-fluid py-5">
+	    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="assets/portfolio.jpeg" class="card-img-top" alt="Portfolio img 1" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Personal Website</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="language">
+                <img src="assets/language.png" class="rounded" alt="language used" width="100px" loading="lazy" />
+              </div>
+              <button class="porto">
+                <a href="#profile">Preview</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/portfolio.jpeg" class="card-img-top rounded" alt="Portfolio img 2" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">E - Commerce</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="language">
+                <img src="assets/language.png" class="rounded" alt="language used" width="100px" loading="lazy" />
+              </div>
+              <button class="porto">
+                <a href="#">Preview</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/portfolio.jpeg" class="card-img-top rounded" alt="Portfolio img 3" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Game Shop</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <div class="language">
+                <img src="assets/language.png" class="rounded" alt="language used" width="100px" loading="lazy" />
+              </div>
+              <button class="porto">
+                <a href="projects/Game-Shop/index.html">Preview</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
+	</section>
+	<!--End Portfolio-->
+	
+	<!--Contact-->
+	<section id="contact">
+	  <div class="container-fluid py-5">
+	    <div class="col-12">
+	      <h1 class="text-center">Contact<span> Me</span></h1>
+	    </div>
+	    <div class="form mt-5 rounded">
+	      <div class="form-list">
+	        <p>Name</p>
+	        <input type="text" name="name" id="name" value="" class="col-12" />
+	        <div class="empty-form"></div>
+	        <p>Email</p>
+	        <input type="email" name="email" id="email" value="" class="col-12" />
+	        <div class="empty-form"></div>
+	        <p>Your Message</p>
+	        <input type="text" name="textarea" id="textarea" value="" class="col-12" />
+	        <div class="empty-form"></div>
+	        <button class="porto">
+            <a href="#">Send -></a>
+          </button>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	<!--End Contact-->
+	
+	<!--Return Button-->
+	<div class="back-button">
+	  <a href="#">UP</a>
+	</div>
+	<!--End Return Button-->
+	
+	<!--Footer-->
+	<div class="footer col-12">
+	  <p class="text-center"> © Pandjie Aldino all right reserved</p>
+	</div>
+	<!--End Footer-->
+</body>
+</html>

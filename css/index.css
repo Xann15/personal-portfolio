@@ -1,0 +1,189 @@
+:root {
+  --color-1: #6a5adf; /* ungu tua */
+  --color-2: #aba2f1; /* ungu muda */
+  --color-3: #f9cf57; /* kuning */
+  --color-4: #f4f2fd; /* abu-abu */
+  --color-5: #fefefe; /* putih */
+  
+}
+
+body {
+  background-color: var(--color-4);
+}
+
+h6 {
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-1);
+}
+
+.navbar-brand { font-family: 'sofia' }
+/* End Navbar */
+
+/* Profile Section */
+#profile .profile-img {
+  margin: 50px auto;
+  width: 150px;
+}
+
+#profile .description {
+  border-radius: 10px;
+  box-shadow: var(--color-4) 0px 0px 20px 0px;
+  background-color: var(--color-1);
+}
+
+#profile .description .wrapper {
+  display: flex;
+  padding: 20px;
+  color: var(--color-5);
+}
+
+#profile .text1, .text2 {
+  padding: 3px;
+}
+
+#profile .btn1, .btn2 {
+  width: 140px;
+  padding: 7px;
+  text-align: center;
+  color: var(--color-5);
+  background-color: var(--color-1);
+  margin: 30px auto;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#profile .btn1:hover, .btn2:hover {
+  color: var(--color-5);
+  box-shadow: var(--color-1) 0px 0px 20px 0px;
+  transition: 0.5s ease;
+}
+/* End Profile Section */
+
+/* Portfolio Section */
+#portfolio .card-img-top { border-radius: 5px 5px 0px 0px }
+
+#portfolio .language img { width: 85px }
+
+#portfolio .porto {
+  margin-top: 20px;
+  width: 80px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background-color: var(--color-1);
+}
+
+#portfolio .porto:hover {
+  box-shadow: var(--color-1) 0px 0px 20px 0px;
+  transition: 0.5s ease;
+}
+
+#portfolio .porto a {
+  text-decoration: none;
+  color: var(--color-5);
+}
+
+#portfolio .porto a:hover {
+  color: var(--color-5);
+}
+/* End Portfolio Section */
+
+/* Contact Us */
+#contact h1 {
+  font-family: 'sofia';
+}
+
+#contact .form {
+  margin: auto;
+  width: 320px;
+  background-color: var(--color-1);
+}
+
+#contact .form .form-list {
+  color: var(--color-5);
+  padding: 20px;
+}
+
+#contact .form .porto {
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-1);
+}
+
+#contact .porto a {
+  text-decoration: none;
+  color: var(--color-5);
+}
+
+#contact .porto a:hover {
+  color: yellow;
+  transition: 0.5s ease;
+}
+
+#contact .form .empty-form {
+  height: 20px;
+}
+/* End Contact Section */
+
+/* Footer */
+.footer {
+  background-color: var(--color-1);
+  height: 50px;
+}
+
+.footer p {
+  padding-top: 14px;
+  color: var(--color-5);
+}
+/* End Footer */
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: var(--color-3);
+  box-shadow: 
+  var(--color-4) 0px 0px 20px 0px
+  ;
+}
+.back-button a {
+  padding-top: 50px;
+  text-decoration: none;
+  color: #000000;
+}
+.back-button a:hover {
+  color: #000000;
+}
+/* End Back Button */
+
+@media (min-width: 990px) {
+  #profile .description-wrapper {
+    width: 500px;
+    margin: auto;
+  }
+  
+  #profile .description {
+    width: 500px;
+    height: 150px;
+  }
+  
+  #contact .form {
+    width: 600px;
+  }
+  
+  #contact .form .form-list {
+    padding: 50px;
+  }
+    
+}
