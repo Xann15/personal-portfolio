@@ -30,15 +30,31 @@ h6 {
 }
 
 #profile .description {
+  min-width: 200px;
+  margin: auto;
   border-radius: 10px;
   box-shadow: var(--color-4) 0px 0px 20px 0px;
   background-color: var(--color-1);
+}
+
+#profile .description-wrapper {
+  width: 300px;
+  margin: auto;
 }
 
 #profile .description .wrapper {
   display: flex;
   padding: 20px;
   color: var(--color-5);
+}
+
+#profile .description .wrapper .medsos {
+  padding-top: 20px;
+}
+
+#profile .description .wrapper .medsos i {
+  color: white;
+  margin: 5px;
 }
 
 #profile .text1, .text2 {
@@ -70,15 +86,15 @@ h6 {
 
 #portfolio .porto {
   margin-top: 20px;
-  width: 80px;
   border-radius: 5px;
+  width: 100px;
   padding: 5px;
   border: none;
   background-color: var(--color-1);
 }
 
 #portfolio .porto:hover {
-  box-shadow: var(--color-1) 0px 0px 20px 0px;
+  box-shadow: var(--color-1) 0px 0px 10px 0px;
   transition: 0.5s ease;
 }
 
@@ -169,6 +185,21 @@ h6 {
   transform: translate(60%, 90%);
 }
 /* End Back Button */
+
+@media (min-width: 460px) {
+  #profile .description {
+    width: 500px;
+  }
+  
+  #profile .description-wrapper {
+    width: 500px;
+    margin: auto;
+  }
+
+  #profile .description .wrapper .medsos i {
+    margin: 15px;
+  }
+}
 
 @media (min-width: 990px) {
   #profile .description-wrapper {
