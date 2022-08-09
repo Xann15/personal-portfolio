@@ -5,11 +5,32 @@
   --color-4: #f4f2fd; /* abu-abu */
   --color-5: #fefefe; /* putih */
   
+  --dmode-1: #161616; /* hitam muda */
 }
 
 body {
   background-color: var(--color-4);
+  transition: 1s ease all;
 }
+
+.mode {
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  transition: 1s ease all;
+}
+
+.mode:hover {
+  box-shadow: 0px 0px 10px 0px white;
+  background-color: #5443d7;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #161616;
+}
+/* End Dark Mode */
 
 h6 {
   color: white;
@@ -54,14 +75,31 @@ h6 {
 
 #profile .description .wrapper .medsos i {
   color: white;
+  transition: 1s ease all;
   margin: 5px;
+}
+
+#profile .description .wrapper .medsos .ig i:hover {
+  color: brown;
+}
+
+#profile .description .wrapper .medsos .wa i:hover {
+  color: rgb(0, 255, 8);
+}
+
+#profile .description .wrapper .medsos .yt i:hover {
+  color: red;
+}
+
+#profile .description .wrapper .medsos .gt i:hover {
+  color: black;
 }
 
 #profile .text1, .text2 {
   padding: 3px;
 }
 
-#profile .btn1, .btn2 {
+#profile .btn1, .btn2, .btn3 {
   width: 140px;
   padding: 7px;
   text-align: center;
@@ -70,12 +108,12 @@ h6 {
   margin: 30px auto;
   border-radius: 10px;
   text-decoration: none;
+  transition: 0.5s ease;
 }
 
-#profile .btn1:hover, .btn2:hover {
+#profile .btn1:hover, .btn2:hover, .btn3:hover {
   color: var(--color-5);
   box-shadow: var(--color-1) 0px 0px 20px 0px;
-  transition: 0.5s ease;
 }
 /* End Profile Section */
 
@@ -91,11 +129,11 @@ h6 {
   padding: 5px;
   border: none;
   background-color: var(--color-1);
+  transition: 0.5s ease;
 }
 
 #portfolio .porto:hover {
   box-shadow: var(--color-1) 0px 0px 10px 0px;
-  transition: 0.5s ease;
 }
 
 #portfolio .porto a {
@@ -108,7 +146,15 @@ h6 {
 }
 /* End Portfolio Section */
 
-/* Contact Us */
+/* E-Certificate Setion */
+
+#certificate {
+  margin: 50px;
+}
+
+/* End E-Certificate Setion */
+
+/* Contact Us Section*/
 #contact h1 {
   font-family: 'sofia';
 }
